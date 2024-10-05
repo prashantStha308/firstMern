@@ -1,0 +1,52 @@
+Packages Used here:
+1. Express
+2. Mongoose
+3. Dotenv
+4. Nodemon
+5. Zustand
+6. Chakra UI
+7. React Icons
+6. React
+8. React Router DOM
+___________________________________________________________________________________________________________________________________________
+
+
+Packages Used here/ Atleast their install commands:
+
+These are for Express.js, MongoDB, and to access .env file with dotenv package
+-    npm install express mongoose dotenv.
+
+'Nodemon' is to run the script everytime file is saved
+-    npm i nodemon
+
+
+'Zustand' is used to create global function. The function at "frontend/src/store/product.js" is being able to be used by other react component is because of this.
+-    npm i zustand
+
+
+This project also uses component library. It uses " Chakra UI " as it's main styling framework and " React Icons " as component library for icons.
+
+To Install "Chakra UI". Go to chakra UI's website>Getting Started. Then find "vite" on the left vertical Navbar, then copy and pase the first code shown.
+
+To install "React Icon", simply run ``` npm i react-icons ```
+
+
+To naviage through pages, we use " React Router DOM " package. To install, run ```npm i react-router-dom```
+
+___________________________________________________________________________________________________________________________________________
+
+We are using the " import express from 'express' " in server.js. To make this work, we include:
+```
+    "type":"module"
+```
+in ./package.json
+
+We also added:
+```
+    "scripts": {
+        "dev": "nodemon backend/server.js"
+    },
+```
+so that every time we run ``` npm run dev ``` the ``` nodemon backend/server.js ``` runs. This only works in the backend file though. 
+
+___________________________________________________________________________________________________________________________________________
